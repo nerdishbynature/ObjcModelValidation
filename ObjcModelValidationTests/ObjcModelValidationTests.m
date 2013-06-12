@@ -15,9 +15,13 @@ SPEC_BEGIN(SampleModelTests)
     __block SampleModel *model;
     CMFactory *factory = [CMFactory forClass:[SampleModel class]];
 
-//        [factory addToField:@"aFieldName" value:^{
-//            return @"www.codeminer42.com";
-//        }];
+    [factory addToField:@"ageNumber" value:^{
+        return @4;
+    }];
+
+    [factory addToField:@"nameString" value:^id{
+        return @"Piet";
+    }];
 
     beforeEach(^{
         model = [factory build];
