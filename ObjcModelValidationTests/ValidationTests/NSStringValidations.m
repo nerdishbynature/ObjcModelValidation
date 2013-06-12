@@ -46,4 +46,26 @@ describe(@"String regex", ^{
     });
 });
 
+describe(@"String inclusion", ^{
+    
+    __block NSString *string;
+    
+    beforeAll(^{
+        string = @"Hello Darling!";
+    });
+    
+    it(@"validates with included String", ^{
+        [[theValue([string inclusion:@[@"Darling"]]) should] beTrue];
+    });
+    
+    it(@"validates with not included String", ^{
+        [[theValue([string inclusion:@[@"Piet"]]) should] beFalse];
+    });
+    
+    it(@"validates with NSNumber", ^{
+        [[theValue([string inclusion:@[@4]]) should] beFalse];
+    });
+
+});
+
 SPEC_END

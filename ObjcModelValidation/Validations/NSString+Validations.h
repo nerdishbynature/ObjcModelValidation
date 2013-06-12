@@ -12,6 +12,7 @@
 
 /**
  Takes an array of strings and searches for it in self.
+ Returns YES if strings where not found in string.
  @param exlusionArray Only accepts NSString objects
  @return BOOL value 
  */
@@ -23,5 +24,13 @@
  @return BOOL value
  */
 -(BOOL)format:(NSString *)regexExpression;
+
+/**
+ Takes an array of strings and searches for it in self.
+ Returns YES if strings was found in string.
+ @param inclusionArray Only accepts NSString objects
+ @return BOOL value
+ */
+-(BOOL)inclusion:(NSArray *)inclusionArray;
 
 @end

@@ -15,7 +15,7 @@
     
     for (NSString *string in exclusionArray) {
         if ([string isKindOfClass:[NSString class]]) {
-            if (!([self rangeOfString:string].location == NSNotFound)) {
+            if ([self containsString:string]) {
                 valid = NO;
                 return valid;
             }
@@ -30,6 +30,27 @@
 -(BOOL)format:(NSString *)regexExpression{
     NSPredicate *test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regexExpression];
     return [test evaluateWithObject:self];
+}
+
+-(BOOL)inclusion:(NSArray *)inclusionArray{
+    BOOL valid = NO;
+    
+    for (NSString *string in inclusionArray) {
+        if ([string isKindOfClass:[NSString class]]) {
+            if ([self containsString:string]) {
+                valid = YES;
+                return valid;
+            }
+        }
+    }
+    
+    // this happens if no invalid string where found
+    // or array is empty
+    return valid;
+}
+
+-(BOOL)containsString:(NSString *)string{
+    return !([self rangeOfString:string].location == NSNotFound);
 }
 
 @end
