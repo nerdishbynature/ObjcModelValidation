@@ -10,4 +10,8 @@
 
 @interface ValidationModel : NSObject
 
+-(NSArray *)save;
+
+-(NSArray *)properties;
+
 @end

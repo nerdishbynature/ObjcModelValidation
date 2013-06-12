@@ -1,5 +1,5 @@
 //
-//  SampleModel.h
+//  ValidationModel+Private.h
 //  ObjcModelValidation
 //
 //  Created by Piet Brauer on 12.06.13.
@@ -8,9 +8,8 @@
 
 #import "ValidationModel.h"
 
-@interface SampleModel : ValidationModel
+@interface ValidationModel (Private)
 
-@property (nonatomic, strong) NSString *nameString;
-@property (nonatomic, strong) NSNumber *ageNumber;
+-(NSArray *)properties;
 
 @end

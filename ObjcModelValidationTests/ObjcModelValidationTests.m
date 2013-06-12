@@ -6,27 +6,26 @@
 //  Copyright (c) 2013 Piet Brauer. All rights reserved.
 //
 
-#import "ObjcModelValidationTests.h"
+#import "SampleModel.h"
+#import "CMFactory.h"
+#import "Kiwi.h"
 
-@implementation ObjcModelValidationTests
+SPEC_BEGIN(SampleModelTests)
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
-}
+    __block SampleModel *model;
+    CMFactory *factory = [CMFactory forClass:[SampleModel class]];
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
+//        [factory addToField:@"aFieldName" value:^{
+//            return @"www.codeminer42.com";
+//        }];
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in ObjcModelValidationTests");
-}
+    beforeEach(^{
+        model = [factory build];
+    });
 
-@end
+    specify(^{
+        [model save];
+        [model shouldNotBeNil];
+    });
+
+SPEC_END
