@@ -133,4 +133,22 @@ describe(@"String length is", ^{
     });
 });
 
+describe(@"Object presence", ^{
+    __block NSString *string;
+    
+    it(@"validates only with declaration", ^{
+        [[theValue([string presence]) should] beFalse];
+    });
+    
+    it(@"validates with nil", ^{
+        string = nil;
+        [[theValue([string presence]) should] beFalse];
+    });
+    
+    it(@"validates with initialization", ^{
+        string = @"Hello";
+        [[theValue([string presence]) should] beTrue];
+    });
+});
+
 SPEC_END
