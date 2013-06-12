@@ -10,4 +10,12 @@
 
 @interface NSObject (Validations)
 
+/**
+ Checks for value to exist or not.
+ This method should be overriden by other validation classes to get
+ specific presence validation for a class.
+ @return BOOL value
+ */
+-(BOOL)presence;
+
 @end

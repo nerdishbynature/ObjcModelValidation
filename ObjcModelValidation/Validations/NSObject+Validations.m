@@ -10,4 +10,8 @@
 
 @implementation NSObject (Validations)
 
+-(BOOL)presence{
+    return [(NSNull *)self isMemberOfClass:[NSNull class]] ? NO : YES;
+}
+
 @end
