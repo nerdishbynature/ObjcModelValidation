@@ -8,6 +8,7 @@
 
 #import "ValidationModel.h"
 #import <objc/runtime.h>
+#import "NSString+Capitalization.h"
 
 #define kPropertyNameKey @"propertyName"
 #define kPropertyTypeKey @"propertyName"
@@ -89,5 +90,7 @@ static const char *getPropertyType(objc_property_t property) {
     }
     return "@";
 }
+
+
 
 @end

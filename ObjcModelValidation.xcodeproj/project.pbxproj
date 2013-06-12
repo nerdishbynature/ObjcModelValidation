@@ -25,7 +25,7 @@
 		2393ADB11768BFD10064ADE4 /* ObjcModelValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393ADB01768BFD10064ADE4 /* ObjcModelValidationTests.m */; };
 		2393ADBD1768C1970064ADE4 /* SampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393ADBC1768C1970064ADE4 /* SampleModel.m */; };
 		2393ADC01768C1BD0064ADE4 /* ValidationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393ADBF1768C1BD0064ADE4 /* ValidationModel.m */; };
-		2393ADC31768C4E30064ADE4 /* ValidationModel+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393ADC21768C4E20064ADE4 /* ValidationModel+Private.m */; };
+		23D173F21768F0BB0041D286 /* NSString+Capitalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F11768F0BB0041D286 /* NSString+Capitalization.m */; };
 		A0F4DF2DD08B45CDB2012491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB208A5F609B4EAF9966FAED /* libPods.a */; };
 		FD6267150FB846558A41D48F /* libPods-ObjcModelValidationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */; };
 /* End PBXBuildFile section */
@@ -61,13 +61,14 @@
 		2393ADA31768BFD00064ADE4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2393ADAB1768BFD10064ADE4 /* ObjcModelValidationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjcModelValidationTests-Info.plist"; sourceTree = "<group>"; };
 		2393ADAD1768BFD10064ADE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2393ADAF1768BFD10064ADE4 /* ObjcModelValidationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcModelValidationTests.h; sourceTree = "<group>"; };
 		2393ADB01768BFD10064ADE4 /* ObjcModelValidationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcModelValidationTests.m; sourceTree = "<group>"; };
 		2393ADBB1768C1970064ADE4 /* SampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleModel.h; path = Models/SampleModel.h; sourceTree = "<group>"; };
 		2393ADBC1768C1970064ADE4 /* SampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModel.m; path = Models/SampleModel.m; sourceTree = "<group>"; };
 		2393ADBE1768C1BD0064ADE4 /* ValidationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValidationModel.h; path = Models/ValidationModel.h; sourceTree = "<group>"; };
 		2393ADBF1768C1BD0064ADE4 /* ValidationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidationModel.m; path = Models/ValidationModel.m; sourceTree = "<group>"; };
-		2393ADC11768C4E20064ADE4 /* ValidationModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ValidationModel+Private.h"; path = "ObjcModelValidationTests/ValidationModel+Private.h"; sourceTree = SOURCE_ROOT; };
-		2393ADC21768C4E20064ADE4 /* ValidationModel+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ValidationModel+Private.m"; path = "ObjcModelValidationTests/ValidationModel+Private.m"; sourceTree = SOURCE_ROOT; };
+		23D173F01768F0BB0041D286 /* NSString+Capitalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Capitalization.h"; path = "Helper/NSString+Capitalization.h"; sourceTree = "<group>"; };
+		23D173F11768F0BB0041D286 /* NSString+Capitalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Capitalization.m"; path = "Helper/NSString+Capitalization.m"; sourceTree = "<group>"; };
 		26DA17AC31C04A9AA08D8A66 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcModelValidationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F60A1B379A249AF87BA6B16 /* Pods-ObjcModelValidationTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcModelValidationTests.xcconfig"; path = "Pods/Pods-ObjcModelValidationTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -137,6 +138,7 @@
 		2393AD851768BFD00064ADE4 /* ObjcModelValidation */ = {
 			isa = PBXGroup;
 			children = (
+				23D173EF1768F0A90041D286 /* Helper */,
 				2393ADBA1768C1700064ADE4 /* Model */,
 				2393AD8E1768BFD00064ADE4 /* AppDelegate.h */,
 				2393AD8F1768BFD00064ADE4 /* AppDelegate.m */,
@@ -165,8 +167,7 @@
 		2393ADA91768BFD00064ADE4 /* ObjcModelValidationTests */ = {
 			isa = PBXGroup;
 			children = (
-				2393ADC11768C4E20064ADE4 /* ValidationModel+Private.h */,
-				2393ADC21768C4E20064ADE4 /* ValidationModel+Private.m */,
+				2393ADAF1768BFD10064ADE4 /* ObjcModelValidationTests.h */,
 				2393ADB01768BFD10064ADE4 /* ObjcModelValidationTests.m */,
 				2393ADAA1768BFD10064ADE4 /* Supporting Files */,
 			);
@@ -191,6 +192,15 @@
 				2393ADBC1768C1970064ADE4 /* SampleModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		23D173EF1768F0A90041D286 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				23D173F01768F0BB0041D286 /* NSString+Capitalization.h */,
+				23D173F11768F0BB0041D286 /* NSString+Capitalization.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +378,7 @@
 				2393AD991768BFD00064ADE4 /* ViewController.m in Sources */,
 				2393ADBD1768C1970064ADE4 /* SampleModel.m in Sources */,
 				2393ADC01768C1BD0064ADE4 /* ValidationModel.m in Sources */,
+				23D173F21768F0BB0041D286 /* NSString+Capitalization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +387,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2393ADB11768BFD10064ADE4 /* ObjcModelValidationTests.m in Sources */,
-				2393ADC31768C4E30064ADE4 /* ValidationModel+Private.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
