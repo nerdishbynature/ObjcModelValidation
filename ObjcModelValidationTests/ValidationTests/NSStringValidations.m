@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Validations.h"
+#import "NSObject+Validations.h"
 #import "Kiwi.h"
 
 SPEC_BEGIN(NSStringValidation)
@@ -148,6 +149,34 @@ describe(@"Object presence", ^{
     it(@"validates with initialization", ^{
         string = @"Hello";
         [[theValue([string presence]) should] beTrue];
+    });
+    
+    it(@"validates with empty string", ^{
+        string = @"";
+        [[theValue([string presence]) should] beFalse];
+    });
+});
+
+describe(@"Object absence", ^{
+    __block NSString *string;
+    
+    it(@"validates only with declaration", ^{
+        [[theValue([string absence]) should] beTrue];
+    });
+    
+    it(@"validates with nil", ^{
+        string = nil;
+        [[theValue([string absence]) should] beTrue];
+    });
+    
+    it(@"validates with initialization", ^{
+        string = @"Hello";
+        [[theValue([string absence]) should] beFalse];
+    });
+    
+    it(@"validates with empty string", ^{
+        string = @"";
+        [[theValue([string absence]) should] beTrue];
     });
 });
 

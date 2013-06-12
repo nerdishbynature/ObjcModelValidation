@@ -11,7 +11,11 @@
 @implementation NSObject (Validations)
 
 -(BOOL)presence{
-    return [(NSNull *)self isMemberOfClass:[NSNull class]] ? NO : YES;
+    return [(NSNull *)self isKindOfClass:[NSNull class]] ? NO : YES;
+}
+
+-(BOOL)absence{
+    return self == nil;
 }
 
 @end

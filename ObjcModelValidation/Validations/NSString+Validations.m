@@ -74,4 +74,8 @@
     return ![self lengthIs:0];
 }
 
+-(BOOL)absence{
+    return [self lengthIs:0];
+}
+
 @end

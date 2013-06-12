@@ -62,10 +62,4 @@
  */
 -(BOOL)lengthIs:(NSInteger)length;
 
-/**
- Validates the presence of the attribute
- @return BOOL value
- */
--(BOOL)presence;
-
 @end

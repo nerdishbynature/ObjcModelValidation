@@ -18,4 +18,12 @@
  */
 -(BOOL)presence;
 
+/**
+ Checks for value is empty or not.
+ This method should be overriden by other validation classes to get
+ specific presence validation for a class.
+ @return BOOL value
+ */
+-(BOOL)absence;
+
 @end
