@@ -10,8 +10,30 @@
 
 @interface ValidationModel : NSObject
 
+/**
+ Method that starts validation. And this should be overriden by the Model
+ to support saving e.g. in a database using Magical Record.
+ @return errors property containing NSError objects
+ */
 -(NSArray *)save;
 
--(NSArray *)properties;
+/**
+ Simple error with localized message status code 0 and className as error domain.
+ @return Returns Error object
+ */
+-(NSError *)errorWithLocalizedMessage:(NSString *)errorMessage;
+
+/**
+ Error with custom error domain and localized error message
+ @return Error object
+ */
+-(NSError *)errorWithErrorDomain:(NSString *)errorDomain andLocalizedMessage:(NSString *)localizedErrorMessage;
+
+/**
+ Error with custom error domain, error code and localized error message. 
+ You could simply call this method on NSError but why not.
+ @return Error object
+ */
+-(NSError *)errorWithErrorDomain:(NSString *)errorDomain code:(NSInteger)errorCode andUserInfoDictionary:(NSDictionary *)userInfoDict;
 
 @end
