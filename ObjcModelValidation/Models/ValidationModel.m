@@ -8,6 +8,7 @@
 
 #import "ValidationModel.h"
 #import <objc/runtime.h>
+#import "NSString+Capitalization.h"
 
 @implementation ValidationModel
 
@@ -52,5 +53,7 @@ static const char *getPropertyType(objc_property_t property) {
     }
     return "@";
 }
+
+
 
 @end
