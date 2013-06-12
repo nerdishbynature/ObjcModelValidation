@@ -27,6 +27,11 @@
 		2393ADC01768C1BD0064ADE4 /* ValidationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393ADBF1768C1BD0064ADE4 /* ValidationModel.m */; };
 		23D173F21768F0BB0041D286 /* NSString+Capitalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F11768F0BB0041D286 /* NSString+Capitalization.m */; };
 		23D173F517691B150041D286 /* NSNumber+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F417691B150041D286 /* NSNumber+Validations.m */; };
+		23D173F817691C9F0041D286 /* NSObject+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F717691C9F0041D286 /* NSObject+Validations.m */; };
+		23D173FB17691CB10041D286 /* NSString+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173FA17691CB10041D286 /* NSString+Validations.m */; };
+		23D173FF17691CCF0041D286 /* NSDictionary+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173FE17691CCF0041D286 /* NSDictionary+Validations.m */; };
+		23D1740217691DA60041D286 /* NSArray+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1740117691DA60041D286 /* NSArray+Validations.m */; };
+		23D174051769213E0041D286 /* NSStringValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D174041769213E0041D286 /* NSStringValidations.m */; };
 		A0F4DF2DD08B45CDB2012491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB208A5F609B4EAF9966FAED /* libPods.a */; };
 		FD6267150FB846558A41D48F /* libPods-ObjcModelValidationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */; };
 /* End PBXBuildFile section */
@@ -71,6 +76,15 @@
 		23D173F11768F0BB0041D286 /* NSString+Capitalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Capitalization.m"; path = "Helper/NSString+Capitalization.m"; sourceTree = "<group>"; };
 		23D173F317691B150041D286 /* NSNumber+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Validations.h"; path = "Validations/NSNumber+Validations.h"; sourceTree = "<group>"; };
 		23D173F417691B150041D286 /* NSNumber+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Validations.m"; path = "Validations/NSNumber+Validations.m"; sourceTree = "<group>"; };
+		23D173F617691C9F0041D286 /* NSObject+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Validations.h"; path = "Validations/NSObject+Validations.h"; sourceTree = "<group>"; };
+		23D173F717691C9F0041D286 /* NSObject+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Validations.m"; path = "Validations/NSObject+Validations.m"; sourceTree = "<group>"; };
+		23D173F917691CB10041D286 /* NSString+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Validations.h"; path = "Validations/NSString+Validations.h"; sourceTree = "<group>"; };
+		23D173FA17691CB10041D286 /* NSString+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Validations.m"; path = "Validations/NSString+Validations.m"; sourceTree = "<group>"; };
+		23D173FD17691CCF0041D286 /* NSDictionary+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Validations.h"; path = "Validations/NSDictionary+Validations.h"; sourceTree = "<group>"; };
+		23D173FE17691CCF0041D286 /* NSDictionary+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Validations.m"; path = "Validations/NSDictionary+Validations.m"; sourceTree = "<group>"; };
+		23D1740017691DA60041D286 /* NSArray+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Validations.h"; path = "Validations/NSArray+Validations.h"; sourceTree = "<group>"; };
+		23D1740117691DA60041D286 /* NSArray+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Validations.m"; path = "Validations/NSArray+Validations.m"; sourceTree = "<group>"; };
+		23D174041769213E0041D286 /* NSStringValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringValidations.m; path = ValidationTests/NSStringValidations.m; sourceTree = "<group>"; };
 		26DA17AC31C04A9AA08D8A66 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcModelValidationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F60A1B379A249AF87BA6B16 /* Pods-ObjcModelValidationTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcModelValidationTests.xcconfig"; path = "Pods/Pods-ObjcModelValidationTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -140,6 +154,7 @@
 		2393AD851768BFD00064ADE4 /* ObjcModelValidation */ = {
 			isa = PBXGroup;
 			children = (
+				23D173FC17691CB30041D286 /* Validations */,
 				23D173EF1768F0A90041D286 /* Helper */,
 				2393ADBA1768C1700064ADE4 /* Model */,
 				2393AD8E1768BFD00064ADE4 /* AppDelegate.h */,
@@ -169,6 +184,7 @@
 		2393ADA91768BFD00064ADE4 /* ObjcModelValidationTests */ = {
 			isa = PBXGroup;
 			children = (
+				23D17406176921440041D286 /* Validations */,
 				2393ADB01768BFD10064ADE4 /* ObjcModelValidationTests.m */,
 				2393ADAA1768BFD10064ADE4 /* Supporting Files */,
 			);
@@ -200,10 +216,33 @@
 			children = (
 				23D173F01768F0BB0041D286 /* NSString+Capitalization.h */,
 				23D173F11768F0BB0041D286 /* NSString+Capitalization.m */,
-				23D173F317691B150041D286 /* NSNumber+Validations.h */,
-				23D173F417691B150041D286 /* NSNumber+Validations.m */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		23D173FC17691CB30041D286 /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				23D173F317691B150041D286 /* NSNumber+Validations.h */,
+				23D173F417691B150041D286 /* NSNumber+Validations.m */,
+				23D173F617691C9F0041D286 /* NSObject+Validations.h */,
+				23D173F717691C9F0041D286 /* NSObject+Validations.m */,
+				23D173F917691CB10041D286 /* NSString+Validations.h */,
+				23D173FA17691CB10041D286 /* NSString+Validations.m */,
+				23D173FD17691CCF0041D286 /* NSDictionary+Validations.h */,
+				23D173FE17691CCF0041D286 /* NSDictionary+Validations.m */,
+				23D1740017691DA60041D286 /* NSArray+Validations.h */,
+				23D1740117691DA60041D286 /* NSArray+Validations.m */,
+			);
+			name = Validations;
+			sourceTree = "<group>";
+		};
+		23D17406176921440041D286 /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				23D174041769213E0041D286 /* NSStringValidations.m */,
+			);
+			name = Validations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +422,10 @@
 				2393ADC01768C1BD0064ADE4 /* ValidationModel.m in Sources */,
 				23D173F21768F0BB0041D286 /* NSString+Capitalization.m in Sources */,
 				23D173F517691B150041D286 /* NSNumber+Validations.m in Sources */,
+				23D173F817691C9F0041D286 /* NSObject+Validations.m in Sources */,
+				23D173FB17691CB10041D286 /* NSString+Validations.m in Sources */,
+				23D173FF17691CCF0041D286 /* NSDictionary+Validations.m in Sources */,
+				23D1740217691DA60041D286 /* NSArray+Validations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2393ADB11768BFD10064ADE4 /* ObjcModelValidationTests.m in Sources */,
+				23D174051769213E0041D286 /* NSStringValidations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,8 @@
 
 @implementation NSNumber (Validations)
 
+-(BOOL)greaterThan:(NSNumber *)referenceNumber{
+    return ([self floatValue] > [referenceNumber floatValue]) ? YES : NO;
+}
+
 @end
