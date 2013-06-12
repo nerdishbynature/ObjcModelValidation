@@ -68,4 +68,69 @@ describe(@"String inclusion", ^{
 
 });
 
+describe(@"String length min", ^{
+    __block NSString *string;
+    
+    beforeAll(^{
+        string = @"Hello";
+    });
+    
+    it(@"validates correct", ^{
+        [[theValue([string lengthMin:1]) should] beTrue];
+    });
+
+    it(@"validates too short string", ^{
+        [[theValue([string lengthMin:10]) should] beFalse];
+    });
+});
+
+describe(@"String length max", ^{
+    __block NSString *string;
+    
+    beforeAll(^{
+        string = @"Hello";
+    });
+    
+    it(@"validates correct", ^{
+        [[theValue([string lengthMax:10]) should] beTrue];
+    });
+    
+    it(@"string to long for validation", ^{
+        [[theValue([string lengthMax:1]) should] beFalse];
+    });
+});
+
+describe(@"String length min and max", ^{
+    __block NSString *string;
+    
+    beforeAll(^{
+        string = @"Hello";
+    });
+    
+    it(@"validates correct", ^{
+        [[theValue([string lengthIn:1 and:10]) should] beTrue];
+    });
+    
+    it(@"string to short for validation", ^{
+        [[theValue([string lengthIn:10 and:15]) should] beFalse];
+    });
+});
+
+
+describe(@"String length is", ^{
+    __block NSString *string;
+    
+    beforeAll(^{
+        string = @"Hello";
+    });
+    
+    it(@"validates correct", ^{
+        [[theValue([string lengthIs:5]) should] beTrue];
+    });
+    
+    it(@"not equal to validation", ^{
+        [[theValue([string lengthIs:10]) should] beFalse];
+    });
+});
+
 SPEC_END

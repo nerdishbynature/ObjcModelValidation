@@ -33,4 +33,12 @@
  */
 -(BOOL)inclusion:(NSArray *)inclusionArray;
 
+-(BOOL)lengthMin:(NSInteger)length;
+
+-(BOOL)lengthMax:(NSInteger)length;
+
+-(BOOL)lengthIn:(NSInteger)lengthMax and:(NSInteger)lengthMin;
+
+-(BOOL)lengthIs:(NSInteger)length;
+
 @end

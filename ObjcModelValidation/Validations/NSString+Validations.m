@@ -53,4 +53,20 @@
     return !([self rangeOfString:string].location == NSNotFound);
 }
 
+-(BOOL)lengthMin:(NSInteger)length{
+    return self.length > length;
+}
+
+-(BOOL)lengthMax:(NSInteger)length{
+    return self.length < length;
+}
+
+-(BOOL)lengthIn:(NSInteger)lengthMin and:(NSInteger)lengthMax{
+    return (self.length > lengthMin && self.length < lengthMax);
+}
+
+-(BOOL)lengthIs:(NSInteger)length{
+    return self.length == length;
+}
+
 @end
