@@ -27,4 +27,9 @@
     return valid;
 }
 
+-(BOOL)format:(NSString *)regexExpression{
+    NSPredicate *test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regexExpression];
+    return [test evaluateWithObject:self];
+}
+
 @end

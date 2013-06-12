@@ -17,4 +17,11 @@
  */
 -(BOOL)exclusion:(NSArray *)exclusionArray;
 
+/**
+ Takes an regex string and validates it.
+ @param regexExpression Regex expression in NSString format.
+ @return BOOL value
+ */
+-(BOOL)format:(NSString *)regexExpression;
+
 @end

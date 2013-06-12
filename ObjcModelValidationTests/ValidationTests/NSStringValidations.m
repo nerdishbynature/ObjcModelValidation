@@ -11,20 +11,38 @@
 
 SPEC_BEGIN(NSStringValidation)
 
-describe(@"String", ^{
-   it(@"validates with exclusions", ^{
-       NSString *string = @"Hello Darling!";
+describe(@"String exclusion", ^{
+    __block NSString *string;
+    
+    beforeAll(^{
+        string = @"Hello Darling!";
+    });
+    
+   it(@"validates with included String", ^{
        [[theValue([string exclusion:@[@"Darling"]]) should] beFalse];
    });
     
-    it(@"validates with exclusions", ^{
-        NSString *string = @"Hello Darling!";
+    it(@"validates with not included String", ^{
         [[theValue([string exclusion:@[@"Piet"]]) should] beTrue];
     });
     
     it(@"validates with NSNumber", ^{
-        NSString *string = @"Hello Darling!";
         [[theValue([string exclusion:@[@4]]) should] beTrue];
+    });
+});
+
+describe(@"String regex", ^{
+
+    __block NSString *regex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    
+    it(@"validates email", ^{
+        NSString *string = @"info@nerdishbynature.com";
+        [[theValue([string format:regex]) should] beTrue];
+    });
+    
+    it(@"validates nonsense", ^{
+        NSString *string = @"info%nerdishbynaturecom,";
+        [[theValue([string format:regex]) should] beFalse];
     });
 });
 
