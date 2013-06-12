@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Validations.h"
+#import "NSObject+Validations.h"
 
 @implementation NSString (Validations)
 
@@ -67,6 +68,10 @@
 
 -(BOOL)lengthIs:(NSInteger)length{
     return self.length == length;
+}
+
+-(BOOL)presence{
+    return ![self lengthIs:0];
 }
 
 @end

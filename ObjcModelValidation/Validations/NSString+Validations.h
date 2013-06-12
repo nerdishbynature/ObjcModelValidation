@@ -33,12 +33,33 @@
  */
 -(BOOL)inclusion:(NSArray *)inclusionArray;
 
+/**
+ Validates with minimum length
+ @param length minimum length
+ @return BOOL value
+ */
 -(BOOL)lengthMin:(NSInteger)length;
 
+/**
+ Validates with maximum length
+ @param length maximum length
+ @return BOOL value
+ */
 -(BOOL)lengthMax:(NSInteger)length;
 
--(BOOL)lengthIn:(NSInteger)lengthMax and:(NSInteger)lengthMin;
+/**
+ Validates with range
+ @param lengthMin minimum length
+ @param lengthMax maximum length
+ @return BOOL value
+ */
+-(BOOL)lengthIn:(NSInteger)lengthMin and:(NSInteger)lengthMax;
 
+/**
+ Validates with exact range
+ @param length length
+ @return BOOL value
+ */
 -(BOOL)lengthIs:(NSInteger)length;
 
 @end
