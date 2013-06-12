@@ -10,5 +10,12 @@
 
 @implementation SampleModel
 
+-(NSError *)validateAgeNumber:(NSNumber *)ageNumber{
+    if ([ageNumber floatValue] > 18.f) {
+        return nil;
+    }
+    
+    return [self errorWithLocalizedMessage:NSLocalizedString(@"You should be older than 18.", @"")];
+}
 
 @end
