@@ -32,6 +32,7 @@
 		23D173FF17691CCF0041D286 /* NSDictionary+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173FE17691CCF0041D286 /* NSDictionary+Validations.m */; };
 		23D1740217691DA60041D286 /* NSArray+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1740117691DA60041D286 /* NSArray+Validations.m */; };
 		23D174051769213E0041D286 /* NSStringValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D174041769213E0041D286 /* NSStringValidations.m */; };
+		23D174091769365A0041D286 /* NSObjectValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D17408176936590041D286 /* NSObjectValidations.m */; };
 		A0F4DF2DD08B45CDB2012491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB208A5F609B4EAF9966FAED /* libPods.a */; };
 		FD6267150FB846558A41D48F /* libPods-ObjcModelValidationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		23D1740017691DA60041D286 /* NSArray+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Validations.h"; path = "Validations/NSArray+Validations.h"; sourceTree = "<group>"; };
 		23D1740117691DA60041D286 /* NSArray+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Validations.m"; path = "Validations/NSArray+Validations.m"; sourceTree = "<group>"; };
 		23D174041769213E0041D286 /* NSStringValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringValidations.m; path = ValidationTests/NSStringValidations.m; sourceTree = "<group>"; };
+		23D17408176936590041D286 /* NSObjectValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectValidations.m; path = ValidationTests/NSObjectValidations.m; sourceTree = "<group>"; };
 		26DA17AC31C04A9AA08D8A66 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcModelValidationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F60A1B379A249AF87BA6B16 /* Pods-ObjcModelValidationTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcModelValidationTests.xcconfig"; path = "Pods/Pods-ObjcModelValidationTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				23D174041769213E0041D286 /* NSStringValidations.m */,
+				23D17408176936590041D286 /* NSObjectValidations.m */,
 			);
 			name = Validations;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			files = (
 				2393ADB11768BFD10064ADE4 /* ObjcModelValidationTests.m in Sources */,
 				23D174051769213E0041D286 /* NSStringValidations.m in Sources */,
+				23D174091769365A0041D286 /* NSObjectValidations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
