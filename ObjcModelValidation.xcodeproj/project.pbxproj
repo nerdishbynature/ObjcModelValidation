@@ -29,8 +29,6 @@
 		23D173F517691B150041D286 /* NSNumber+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F417691B150041D286 /* NSNumber+Validations.m */; };
 		23D173F817691C9F0041D286 /* NSObject+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F717691C9F0041D286 /* NSObject+Validations.m */; };
 		23D173FB17691CB10041D286 /* NSString+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173FA17691CB10041D286 /* NSString+Validations.m */; };
-		23D173FF17691CCF0041D286 /* NSDictionary+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173FE17691CCF0041D286 /* NSDictionary+Validations.m */; };
-		23D1740217691DA60041D286 /* NSArray+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1740117691DA60041D286 /* NSArray+Validations.m */; };
 		23D174051769213E0041D286 /* NSStringValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D174041769213E0041D286 /* NSStringValidations.m */; };
 		23D174091769365A0041D286 /* NSObjectValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D17408176936590041D286 /* NSObjectValidations.m */; };
 		A0F4DF2DD08B45CDB2012491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB208A5F609B4EAF9966FAED /* libPods.a */; };
@@ -81,10 +79,6 @@
 		23D173F717691C9F0041D286 /* NSObject+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Validations.m"; path = "Validations/NSObject+Validations.m"; sourceTree = "<group>"; };
 		23D173F917691CB10041D286 /* NSString+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Validations.h"; path = "Validations/NSString+Validations.h"; sourceTree = "<group>"; };
 		23D173FA17691CB10041D286 /* NSString+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Validations.m"; path = "Validations/NSString+Validations.m"; sourceTree = "<group>"; };
-		23D173FD17691CCF0041D286 /* NSDictionary+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Validations.h"; path = "Validations/NSDictionary+Validations.h"; sourceTree = "<group>"; };
-		23D173FE17691CCF0041D286 /* NSDictionary+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Validations.m"; path = "Validations/NSDictionary+Validations.m"; sourceTree = "<group>"; };
-		23D1740017691DA60041D286 /* NSArray+Validations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Validations.h"; path = "Validations/NSArray+Validations.h"; sourceTree = "<group>"; };
-		23D1740117691DA60041D286 /* NSArray+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Validations.m"; path = "Validations/NSArray+Validations.m"; sourceTree = "<group>"; };
 		23D174041769213E0041D286 /* NSStringValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringValidations.m; path = ValidationTests/NSStringValidations.m; sourceTree = "<group>"; };
 		23D17408176936590041D286 /* NSObjectValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectValidations.m; path = ValidationTests/NSObjectValidations.m; sourceTree = "<group>"; };
 		26DA17AC31C04A9AA08D8A66 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -231,10 +225,6 @@
 				23D173F717691C9F0041D286 /* NSObject+Validations.m */,
 				23D173F917691CB10041D286 /* NSString+Validations.h */,
 				23D173FA17691CB10041D286 /* NSString+Validations.m */,
-				23D173FD17691CCF0041D286 /* NSDictionary+Validations.h */,
-				23D173FE17691CCF0041D286 /* NSDictionary+Validations.m */,
-				23D1740017691DA60041D286 /* NSArray+Validations.h */,
-				23D1740117691DA60041D286 /* NSArray+Validations.m */,
 			);
 			name = Validations;
 			sourceTree = "<group>";
@@ -427,8 +417,6 @@
 				23D173F517691B150041D286 /* NSNumber+Validations.m in Sources */,
 				23D173F817691C9F0041D286 /* NSObject+Validations.m in Sources */,
 				23D173FB17691CB10041D286 /* NSString+Validations.m in Sources */,
-				23D173FF17691CCF0041D286 /* NSDictionary+Validations.m in Sources */,
-				23D1740217691DA60041D286 /* NSArray+Validations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
