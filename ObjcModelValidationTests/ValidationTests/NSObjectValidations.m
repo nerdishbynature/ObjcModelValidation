@@ -29,22 +29,22 @@ describe(@"Object presence", ^{
     });
 });
 
-describe(@"Object absence", ^{
-    __block id obj;
-    
-    it(@"validates only with declaration", ^{
-        [[theValue([obj absence]) should] beTrue];
-    });
-    
-    it(@"validates with nil", ^{
-        obj = nil;
-        [[theValue([obj absence]) should] beTrue];
-    });
-    
-    it(@"validates with initialization", ^{
-        obj = @"Hello";
-        [[theValue([obj absence]) should] beFalse];
-    });
-});
+//describe(@"Object absence", ^{
+//    __block id obj;
+//    
+//    it(@"validates only with declaration", ^{
+//        [[theValue([obj absence]) should] beTrue];
+//    });
+//    
+//    it(@"validates with nil", ^{
+//        obj = nil;
+//        [[theValue([obj absence]) should] beTrue];
+//    });
+//    
+//    it(@"validates with initialization", ^{
+//        obj = @"Hello";
+//        [[theValue([obj absence]) should] beFalse];
+//    });
+//});
 
 SPEC_END

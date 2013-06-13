@@ -62,4 +62,10 @@
  */
 -(BOOL)lengthIs:(NSInteger)length;
 
+/**
+ Validates with if the string consists only of numbers
+ @return BOOL value
+ */
+-(BOOL)numericality;
+
 @end

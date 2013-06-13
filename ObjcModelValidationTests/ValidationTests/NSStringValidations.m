@@ -15,7 +15,7 @@ SPEC_BEGIN(NSStringValidation)
 describe(@"String exclusion", ^{
     __block NSString *string;
     
-    beforeAll(^{
+    beforeEach(^{
         string = @"Hello Darling!";
     });
     
@@ -72,7 +72,7 @@ describe(@"String inclusion", ^{
 describe(@"String length min", ^{
     __block NSString *string;
     
-    beforeAll(^{
+    beforeEach(^{
         string = @"Hello";
     });
     
@@ -88,7 +88,7 @@ describe(@"String length min", ^{
 describe(@"String length max", ^{
     __block NSString *string;
     
-    beforeAll(^{
+    beforeEach(^{
         string = @"Hello";
     });
     
@@ -104,7 +104,7 @@ describe(@"String length max", ^{
 describe(@"String length min and max", ^{
     __block NSString *string;
     
-    beforeAll(^{
+    beforeEach(^{
         string = @"Hello";
     });
     
@@ -121,7 +121,7 @@ describe(@"String length min and max", ^{
 describe(@"String length is", ^{
     __block NSString *string;
     
-    beforeAll(^{
+    beforeEach(^{
         string = @"Hello";
     });
     
@@ -136,10 +136,6 @@ describe(@"String length is", ^{
 
 describe(@"Object presence", ^{
     __block NSString *string;
-    
-    it(@"validates only with declaration", ^{
-        [[theValue([string presence]) should] beFalse];
-    });
     
     it(@"validates with nil", ^{
         string = nil;
@@ -157,27 +153,43 @@ describe(@"Object presence", ^{
     });
 });
 
-describe(@"Object absence", ^{
-    __block NSString *string;
+//describe(@"Object absence", ^{    
+//    it(@"validates with nil", ^{
+//        NSString *nilString = nil;
+//        PBLog(@"%@", [nilString class]);
+//        [[theValue([nilString absence]) should] beTrue];
+//    });
+//    
+//    it(@"validates with initialization", ^{
+//        NSString *helloString = @"Hello";
+//        [[theValue([helloString absence]) should] beFalse];
+//    });
+//    
+//    it(@"validates with empty string", ^{
+//        NSString *emptyString = @"";
+//        [[theValue([emptyString absence]) should] beTrue];
+//    });
+//});
+
+describe(@"Object numericality", ^{
     
-    it(@"validates only with declaration", ^{
-        [[theValue([string absence]) should] beTrue];
+    it(@"validates with integer", ^{
+        [[theValue([@"5" numericality])should] beTrue];
     });
     
-    it(@"validates with nil", ^{
-        string = nil;
-        [[theValue([string absence]) should] beTrue];
+    it(@"validates with en number", ^{
+        [[theValue([@"4.5" numericality])should] beTrue];
     });
     
-    it(@"validates with initialization", ^{
-        string = @"Hello";
-        [[theValue([string absence]) should] beFalse];
+    it(@"validates with de number", ^{
+        [[theValue([@"4,5" numericality])should] beTrue];
     });
     
-    it(@"validates with empty string", ^{
-        string = @"";
-        [[theValue([string absence]) should] beTrue];
+    it(@"validates not with containing strings", ^{
+        [[theValue([@"4,5de" numericality])should] beFalse];
     });
 });
+
+
 
 SPEC_END

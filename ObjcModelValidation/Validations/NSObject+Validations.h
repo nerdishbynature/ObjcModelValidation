@@ -24,6 +24,13 @@
  specific presence validation for a class.
  @return BOOL value
  */
--(BOOL)absence;
+//-(BOOL)absence;
+
+/**
+ Checks for the speicified method and executes custom validation.
+ @param selector The Selector used to perform the action.
+ @return BOOL value
+ */
+-(BOOL)validatesWithSelector:(SEL)selector;
 
 @end

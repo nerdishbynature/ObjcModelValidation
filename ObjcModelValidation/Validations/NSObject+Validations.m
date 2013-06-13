@@ -15,7 +15,19 @@
 }
 
 -(BOOL)absence{
-    return self == nil;
+    return ![self presence];
+}
+
+-(BOOL)validatesWithSelector:(SEL)selector{
+    if ([self respondsToSelector:selector]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        return (BOOL)[self performSelector:selector];
+#pragma clang diagnostic pop
+    } else {
+        PBLog(@"no selector found with name %@", NSStringFromSelector(selector));
+        return NO;
+    }
 }
 
 @end

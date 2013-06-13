@@ -75,7 +75,40 @@
 }
 
 -(BOOL)absence{
-    return [self lengthIs:0];
+//    [super absence];
+    
+    if ([self lengthIs:0]) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+-(BOOL)numericality{
+    NSNumber *en_Number = [self enNumber];
+    NSNumber *de_Number = [self deNumber];
+    
+    return (en_Number != nil || de_Number != nil);
+}
+
+-(BOOL)onlyInteger{
+    NSString *regexExpression = @"A[+-]?d+Z";
+    return [self format:regexExpression];
+}
+
+-(NSNumber *)deNumber{
+    return [self numberWithLocale:@"de_DE"];
+}
+
+-(NSNumber *)enNumber{
+    return [self numberWithLocale:@"en_US"];
+}
+
+-(NSNumber *)numberWithLocale:(NSString *)localeString{
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:localeString];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setLocale:locale];
+    return [formatter numberFromString:self];
 }
 
 @end
