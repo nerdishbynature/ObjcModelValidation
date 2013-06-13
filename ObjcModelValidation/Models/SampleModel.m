@@ -11,7 +11,7 @@
 @implementation SampleModel
 
 -(NSError *)validateAgeNumber:(NSNumber *)ageNumber{
-    if ([ageNumber floatValue] > 18.f) {
+    if ([ageNumber greaterThan:@18] && [ageNumber presence]) {
         return nil;
     }
     
