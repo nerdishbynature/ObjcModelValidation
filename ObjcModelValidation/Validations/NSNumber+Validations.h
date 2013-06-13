@@ -10,4 +10,6 @@
 
 @interface NSNumber (Validations)
 
+-(BOOL)greaterThan:(NSNumber *)referenceNumber;
+
 @end
