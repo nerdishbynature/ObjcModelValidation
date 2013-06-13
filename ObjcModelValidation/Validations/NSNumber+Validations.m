@@ -14,4 +14,8 @@
     return ([self floatValue] > [referenceNumber floatValue]) ? YES : NO;
 }
 
+-(BOOL)lessThan:(NSNumber *)referenceNumber{
+    return ([self floatValue] < [referenceNumber floatValue]) ? YES : NO;
+}
+
 @end
