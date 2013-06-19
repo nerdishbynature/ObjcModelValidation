@@ -126,14 +126,19 @@
 /**
  Reads the properties.
  */
-static const char *getPropertyType(objc_property_t property) {
+static const char *getPropertyType(objc_property_t property)
+{
     const char *attributes = property_getAttributes(property);
     char buffer[1 + strlen(attributes)];
     strcpy(buffer, attributes);
     char *state = buffer, *attribute;
-    while ((attribute = strsep(&state, ",")) != NULL) {
-        if (attribute[0] == 'T') {
-            return (const char *)[[NSData dataWithBytes:(attribute + 3) length:strlen(attribute) - 4] bytes];
+    while ((attribute = strsep(&state, ",")) != NULL)
+    {
+        if (attribute && strlen(attribute) > 3 && attribute[0] == 'T')
+        {
+            NSUInteger i = strlen(attribute) - 4;
+            //NSLog(@"attribute = %s, strlen = %lu, i=%lu",attribute, strlen(attribute), i);
+            return (const char *)[[NSData dataWithBytes:(attribute + 3) length:i] bytes];
         }
     }
     return "@";
