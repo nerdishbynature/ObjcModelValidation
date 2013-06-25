@@ -24,8 +24,8 @@
 @implementation ValidationModel
 
 -(NSArray *)save{
-    [self validateProperties];
     self.errors = [NSMutableArray array];
+    [self validateProperties];
     return self.errors;
 }
 
