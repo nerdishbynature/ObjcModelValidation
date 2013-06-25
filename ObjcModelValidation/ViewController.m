@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SampleModel.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    SampleModel *sample = [[SampleModel alloc] init];
+    sample.nameString = @"Piet";
+    sample.ageNumber = @22;
+    
+    NSArray *errors = [sample save];
+    if (errors.count != 0) {
+        
+        PBLog(@"I got some errors here.");
+        
+        for (NSError *error in errors) {
+            
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:error.localizedDescription delegate:nil cancelButtonTitle:@"Hide" otherButtonTitles:nil];
+            [alertView show];
+            
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
