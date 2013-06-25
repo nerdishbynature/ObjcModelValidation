@@ -63,7 +63,7 @@
 }
 
 -(BOOL)lengthIn:(NSInteger)lengthMin and:(NSInteger)lengthMax{
-    return (self.length > lengthMin && self.length < lengthMax);
+    return (self.length >= lengthMin && self.length <= lengthMax);
 }
 
 -(BOOL)lengthIs:(NSInteger)length{
