@@ -10,8 +10,6 @@
 #import "NSNumber+Validations.h"
 #import "NSObject+Validations.h"
 #import "NSString+Validations.h"
-#import "NSDictionary+Validations.h"
-#import "NSArray+Validations.h"
 
 @interface ValidationModel : NSObject
 
