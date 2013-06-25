@@ -10,14 +10,6 @@
 		2393AD801768BFD00064ADE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD7F1768BFD00064ADE4 /* UIKit.framework */; };
 		2393AD821768BFD00064ADE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD811768BFD00064ADE4 /* Foundation.framework */; };
 		2393AD841768BFD00064ADE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD831768BFD00064ADE4 /* CoreGraphics.framework */; };
-		2393AD8A1768BFD00064ADE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2393AD881768BFD00064ADE4 /* InfoPlist.strings */; };
-		2393AD8C1768BFD00064ADE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393AD8B1768BFD00064ADE4 /* main.m */; };
-		2393AD901768BFD00064ADE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393AD8F1768BFD00064ADE4 /* AppDelegate.m */; };
-		2393AD921768BFD00064ADE4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2393AD911768BFD00064ADE4 /* Default.png */; };
-		2393AD941768BFD00064ADE4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2393AD931768BFD00064ADE4 /* Default@2x.png */; };
-		2393AD961768BFD00064ADE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2393AD951768BFD00064ADE4 /* Default-568h@2x.png */; };
-		2393AD991768BFD00064ADE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393AD981768BFD00064ADE4 /* ViewController.m */; };
-		2393AD9C1768BFD00064ADE4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2393AD9A1768BFD00064ADE4 /* ViewController.xib */; };
 		2393ADA41768BFD00064ADE4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393ADA31768BFD00064ADE4 /* SenTestingKit.framework */; };
 		2393ADA51768BFD00064ADE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD7F1768BFD00064ADE4 /* UIKit.framework */; };
 		2393ADA61768BFD00064ADE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD811768BFD00064ADE4 /* Foundation.framework */; };
@@ -31,6 +23,13 @@
 		23D173FB17691CB10041D286 /* NSString+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173FA17691CB10041D286 /* NSString+Validations.m */; };
 		23D174051769213E0041D286 /* NSStringValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D174041769213E0041D286 /* NSStringValidations.m */; };
 		23D174091769365A0041D286 /* NSObjectValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D17408176936590041D286 /* NSObjectValidations.m */; };
+		23EA9257177A171C00504DF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA924E177A171C00504DF1 /* AppDelegate.m */; };
+		23EA9258177A171C00504DF1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EA924F177A171C00504DF1 /* Default-568h@2x.png */; };
+		23EA9259177A171C00504DF1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EA9250177A171C00504DF1 /* Default.png */; };
+		23EA925A177A171C00504DF1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EA9251177A171C00504DF1 /* Default@2x.png */; };
+		23EA925B177A171C00504DF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA9252177A171C00504DF1 /* main.m */; };
+		23EA925C177A171C00504DF1 /* ObjcModelValidation-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23EA9253177A171C00504DF1 /* ObjcModelValidation-Info.plist */; };
+		23EA925D177A171C00504DF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA9256177A171C00504DF1 /* ViewController.m */; };
 		A0F4DF2DD08B45CDB2012491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB208A5F609B4EAF9966FAED /* libPods.a */; };
 		FD6267150FB846558A41D48F /* libPods-ObjcModelValidationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */; };
 /* End PBXBuildFile section */
@@ -50,18 +49,6 @@
 		2393AD7F1768BFD00064ADE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2393AD811768BFD00064ADE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2393AD831768BFD00064ADE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2393AD871768BFD00064ADE4 /* ObjcModelValidation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjcModelValidation-Info.plist"; sourceTree = "<group>"; };
-		2393AD891768BFD00064ADE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2393AD8B1768BFD00064ADE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2393AD8D1768BFD00064ADE4 /* ObjcModelValidation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcModelValidation-Prefix.pch"; sourceTree = "<group>"; };
-		2393AD8E1768BFD00064ADE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2393AD8F1768BFD00064ADE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2393AD911768BFD00064ADE4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		2393AD931768BFD00064ADE4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		2393AD951768BFD00064ADE4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2393AD971768BFD00064ADE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2393AD981768BFD00064ADE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2393AD9B1768BFD00064ADE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		2393ADA21768BFD00064ADE4 /* ObjcModelValidationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcModelValidationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2393ADA31768BFD00064ADE4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2393ADAB1768BFD10064ADE4 /* ObjcModelValidationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjcModelValidationTests-Info.plist"; sourceTree = "<group>"; };
@@ -81,6 +68,16 @@
 		23D173FA17691CB10041D286 /* NSString+Validations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Validations.m"; path = "Validations/NSString+Validations.m"; sourceTree = "<group>"; };
 		23D174041769213E0041D286 /* NSStringValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringValidations.m; path = ValidationTests/NSStringValidations.m; sourceTree = "<group>"; };
 		23D17408176936590041D286 /* NSObjectValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectValidations.m; path = ValidationTests/NSObjectValidations.m; sourceTree = "<group>"; };
+		23EA924D177A171C00504DF1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ObjcModelValidation/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		23EA924E177A171C00504DF1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ObjcModelValidation/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		23EA924F177A171C00504DF1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ObjcModelValidation/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		23EA9250177A171C00504DF1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ObjcModelValidation/Default.png; sourceTree = SOURCE_ROOT; };
+		23EA9251177A171C00504DF1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "ObjcModelValidation/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		23EA9252177A171C00504DF1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ObjcModelValidation/main.m; sourceTree = SOURCE_ROOT; };
+		23EA9253177A171C00504DF1 /* ObjcModelValidation-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ObjcModelValidation-Info.plist"; path = "ObjcModelValidation/ObjcModelValidation-Info.plist"; sourceTree = SOURCE_ROOT; };
+		23EA9254177A171C00504DF1 /* ObjcModelValidation-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ObjcModelValidation-Prefix.pch"; path = "ObjcModelValidation/ObjcModelValidation-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		23EA9255177A171C00504DF1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ObjcModelValidation/ViewController.h; sourceTree = SOURCE_ROOT; };
+		23EA9256177A171C00504DF1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ObjcModelValidation/ViewController.m; sourceTree = SOURCE_ROOT; };
 		26DA17AC31C04A9AA08D8A66 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcModelValidationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F60A1B379A249AF87BA6B16 /* Pods-ObjcModelValidationTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcModelValidationTests.xcconfig"; path = "Pods/Pods-ObjcModelValidationTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -150,29 +147,28 @@
 		2393AD851768BFD00064ADE4 /* ObjcModelValidation */ = {
 			isa = PBXGroup;
 			children = (
+				23EA924D177A171C00504DF1 /* AppDelegate.h */,
+				23EA924E177A171C00504DF1 /* AppDelegate.m */,
 				23D173FC17691CB30041D286 /* Validations */,
 				23D173EF1768F0A90041D286 /* Helper */,
 				2393ADBA1768C1700064ADE4 /* Model */,
-				2393AD8E1768BFD00064ADE4 /* AppDelegate.h */,
-				2393AD8F1768BFD00064ADE4 /* AppDelegate.m */,
-				2393AD971768BFD00064ADE4 /* ViewController.h */,
-				2393AD981768BFD00064ADE4 /* ViewController.m */,
-				2393AD9A1768BFD00064ADE4 /* ViewController.xib */,
+				23EA9255177A171C00504DF1 /* ViewController.h */,
+				23EA9256177A171C00504DF1 /* ViewController.m */,
 				2393AD861768BFD00064ADE4 /* Supporting Files */,
 			);
-			path = ObjcModelValidation;
+			name = ObjcModelValidation;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		2393AD861768BFD00064ADE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2393AD871768BFD00064ADE4 /* ObjcModelValidation-Info.plist */,
-				2393AD881768BFD00064ADE4 /* InfoPlist.strings */,
-				2393AD8B1768BFD00064ADE4 /* main.m */,
-				2393AD8D1768BFD00064ADE4 /* ObjcModelValidation-Prefix.pch */,
-				2393AD911768BFD00064ADE4 /* Default.png */,
-				2393AD931768BFD00064ADE4 /* Default@2x.png */,
-				2393AD951768BFD00064ADE4 /* Default-568h@2x.png */,
+				23EA924F177A171C00504DF1 /* Default-568h@2x.png */,
+				23EA9250177A171C00504DF1 /* Default.png */,
+				23EA9251177A171C00504DF1 /* Default@2x.png */,
+				23EA9253177A171C00504DF1 /* ObjcModelValidation-Info.plist */,
+				23EA9254177A171C00504DF1 /* ObjcModelValidation-Prefix.pch */,
+				23EA9252177A171C00504DF1 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -313,11 +309,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2393AD8A1768BFD00064ADE4 /* InfoPlist.strings in Resources */,
-				2393AD921768BFD00064ADE4 /* Default.png in Resources */,
-				2393AD941768BFD00064ADE4 /* Default@2x.png in Resources */,
-				2393AD961768BFD00064ADE4 /* Default-568h@2x.png in Resources */,
-				2393AD9C1768BFD00064ADE4 /* ViewController.xib in Resources */,
+				23EA9258177A171C00504DF1 /* Default-568h@2x.png in Resources */,
+				23EA9259177A171C00504DF1 /* Default.png in Resources */,
+				23EA925A177A171C00504DF1 /* Default@2x.png in Resources */,
+				23EA925C177A171C00504DF1 /* ObjcModelValidation-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,15 +403,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2393AD8C1768BFD00064ADE4 /* main.m in Sources */,
-				2393AD901768BFD00064ADE4 /* AppDelegate.m in Sources */,
-				2393AD991768BFD00064ADE4 /* ViewController.m in Sources */,
 				2393ADBD1768C1970064ADE4 /* SampleModel.m in Sources */,
 				2393ADC01768C1BD0064ADE4 /* ValidationModel.m in Sources */,
 				23D173F21768F0BB0041D286 /* NSString+Capitalization.m in Sources */,
 				23D173F517691B150041D286 /* NSNumber+Validations.m in Sources */,
 				23D173F817691C9F0041D286 /* NSObject+Validations.m in Sources */,
 				23D173FB17691CB10041D286 /* NSString+Validations.m in Sources */,
+				23EA9257177A171C00504DF1 /* AppDelegate.m in Sources */,
+				23EA925B177A171C00504DF1 /* main.m in Sources */,
+				23EA925D177A171C00504DF1 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,22 +436,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2393AD881768BFD00064ADE4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2393AD891768BFD00064ADE4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2393AD9A1768BFD00064ADE4 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2393AD9B1768BFD00064ADE4 /* en */,
-			);
-			name = ViewController.xib;
-			sourceTree = "<group>";
-		};
 		2393ADAC1768BFD10064ADE4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
