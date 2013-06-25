@@ -54,8 +54,8 @@
 		2393ADAB1768BFD10064ADE4 /* ObjcModelValidationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjcModelValidationTests-Info.plist"; sourceTree = "<group>"; };
 		2393ADAD1768BFD10064ADE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2393ADB01768BFD10064ADE4 /* ObjcModelValidationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcModelValidationTests.m; sourceTree = "<group>"; };
-		2393ADBB1768C1970064ADE4 /* SampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleModel.h; path = Models/SampleModel.h; sourceTree = "<group>"; };
-		2393ADBC1768C1970064ADE4 /* SampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModel.m; path = Models/SampleModel.m; sourceTree = "<group>"; };
+		2393ADBB1768C1970064ADE4 /* SampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleModel.h; path = ../ObjcModelValidation/SampleModel.h; sourceTree = "<group>"; };
+		2393ADBC1768C1970064ADE4 /* SampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModel.m; path = ../ObjcModelValidation/SampleModel.m; sourceTree = "<group>"; };
 		2393ADBE1768C1BD0064ADE4 /* ValidationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValidationModel.h; path = Models/ValidationModel.h; sourceTree = "<group>"; };
 		2393ADBF1768C1BD0064ADE4 /* ValidationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidationModel.m; path = Models/ValidationModel.m; sourceTree = "<group>"; };
 		23D173F01768F0BB0041D286 /* NSString+Capitalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Capitalization.h"; path = "Helper/NSString+Capitalization.h"; sourceTree = "<group>"; };
