@@ -14,6 +14,11 @@
 @interface ValidationModel : NSObject
 
 /**
+ Array containing the NSError objects.
+ */
+@property (nonatomic, strong) NSMutableArray *errors;
+
+/**
  Method that starts validation. And this should be overriden by the Model
  to support saving e.g. in a database using Magical Record.
  @return errors property containing NSError objects

@@ -17,7 +17,6 @@
 @interface ValidationModel ()
 
 @property (nonatomic, strong) NSArray *properties;
-@property (nonatomic, strong) NSMutableArray *errors;
 
 @end
 
