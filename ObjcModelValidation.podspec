@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.author       = { "Piet Brauer" => "piet@nerdishbynature.com" }
   s.source       = { :git => "https://github.com/nerdishbynature/ObjcModelValidation.git", :tag => "0.2" }
   s.source_files = 'Classes', 'Classes/**/*.{h,m}'
-  s.requires_arc = true'
+  s.requires_arc = true
 end
