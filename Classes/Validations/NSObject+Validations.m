@@ -25,7 +25,7 @@
         return (BOOL)[self performSelector:selector];
 #pragma clang diagnostic pop
     } else {
-        PBLog(@"no selector found with name %@", NSStringFromSelector(selector));
+        NSLog(@"no selector found with name %@", NSStringFromSelector(selector));
         return NO;
     }
 }

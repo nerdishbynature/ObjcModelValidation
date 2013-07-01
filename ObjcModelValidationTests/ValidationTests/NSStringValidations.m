@@ -156,7 +156,7 @@ describe(@"Object presence", ^{
 //describe(@"Object absence", ^{    
 //    it(@"validates with nil", ^{
 //        NSString *nilString = nil;
-//        PBLog(@"%@", [nilString class]);
+//        NSLog(@"%@", [nilString class]);
 //        [[theValue([nilString absence]) should] beTrue];
 //    });
 //    

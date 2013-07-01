@@ -26,7 +26,7 @@
     NSArray *errors = [sample save];
     if (errors.count != 0) {
         
-        PBLog(@"I got some errors here.");
+        NSLog(@"I got some errors here.");
         
         for (NSError *error in errors) {
             
