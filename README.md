@@ -13,7 +13,7 @@ Validation in Objective-C requires some effort to do and I needed it hardly. Kno
 
 Import using cocoapods
     
-    pod 'ObjcModelValidation', '~> 0.1'
+    pod 'ObjcModelValidation', '~> 0.2'
     
 ### Create your model
 
