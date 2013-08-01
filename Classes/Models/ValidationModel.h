@@ -13,7 +13,6 @@
 
 @interface ValidationModel : NSObject
 
-
 /**
  *	Array containing the NSError objects.
  */
