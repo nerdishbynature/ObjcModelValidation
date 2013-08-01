@@ -20,14 +20,6 @@
 -(BOOL)presence;
 
 /**
- Checks for value is empty or not.
- This method should be overriden by other validation classes to get
- specific presence validation for a class.
- @return BOOL value
- */
-//-(BOOL)absence;
-
-/**
  *	Checks for the speicified method and executes custom validation.
  *
  *	@param	selector	The Selector used to perform the action.
