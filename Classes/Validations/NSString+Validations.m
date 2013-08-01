@@ -75,8 +75,6 @@
 }
 
 -(BOOL)absence{
-//    [super absence];
-    
     if ([self lengthIs:0]) {
         return YES;
     }
