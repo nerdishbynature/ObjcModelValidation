@@ -28,7 +28,6 @@
 		23EA9259177A171C00504DF1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EA9250177A171C00504DF1 /* Default.png */; };
 		23EA925A177A171C00504DF1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EA9251177A171C00504DF1 /* Default@2x.png */; };
 		23EA925B177A171C00504DF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA9252177A171C00504DF1 /* main.m */; };
-		23EA925C177A171C00504DF1 /* ObjcModelValidation-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23EA9253177A171C00504DF1 /* ObjcModelValidation-Info.plist */; };
 		23EA925D177A171C00504DF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA9256177A171C00504DF1 /* ViewController.m */; };
 		A0F4DF2DD08B45CDB2012491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB208A5F609B4EAF9966FAED /* libPods.a */; };
 		FD6267150FB846558A41D48F /* libPods-ObjcModelValidationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */; };
@@ -312,7 +311,6 @@
 				23EA9258177A171C00504DF1 /* Default-568h@2x.png in Resources */,
 				23EA9259177A171C00504DF1 /* Default.png in Resources */,
 				23EA925A177A171C00504DF1 /* Default@2x.png in Resources */,
-				23EA925C177A171C00504DF1 /* ObjcModelValidation-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +537,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjcModelValidation/ObjcModelValidation-Prefix.pch";
 				INFOPLIST_FILE = "ObjcModelValidationTests/ObjcModelValidationTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -557,6 +559,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjcModelValidation/ObjcModelValidation-Prefix.pch";
 				INFOPLIST_FILE = "ObjcModelValidationTests/ObjcModelValidationTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
