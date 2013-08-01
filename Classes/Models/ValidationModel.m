@@ -73,8 +73,9 @@
 }
 
 /**
- Loads all properties from self (subclass)
- @return Array containing Dictionaries as described in propertyDictForIndex:andProperties:
+ *	Loads all properties from self (subclass)
+ *
+ *	@return	Array containing Dictionaries as described in propertyDictForIndex:andProperties:
  */
 -(NSArray *)loadProperties{
     NSMutableArray *propertiesArray = [[NSMutableArray alloc] init];
@@ -93,10 +94,12 @@
 }
 
 /**
- This creates a dictionary with the property name and type
- @param index Current index of for-loop
- @param properties objc_property_t object containing the properties
- @return Initialized and filles NSDictionary as described above
+ *	This creates a dictionary with the property name and type
+ *
+ *	@param	index	Current index of for-loop
+ *	@param	properties	objc_property_t object containing the properties
+ *
+ *	@return	Initialized and filled NSDictionary as described above
  */
 -(NSDictionary *)propertyDictForIndex:(unsigned int)index andProperties:(objc_property_t *)properties{
     objc_property_t property = properties[index];
@@ -130,7 +133,11 @@
 #pragma mark - C stuff
 
 /**
- Reads the properties.
+ *	Reads the properties.
+ *
+ *	@param	property	property reference
+ *
+ *	@return	Returns a property
  */
 static const char *getPropertyType(objc_property_t property)
 {
