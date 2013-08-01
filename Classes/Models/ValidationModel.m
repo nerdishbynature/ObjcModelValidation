@@ -54,13 +54,19 @@
             NSError *error = [self performSelector:selector withObject:[self valueForKey:propertyName]];
 #pragma clang diagnostic pop
             if (error) {
+#ifdef DEBUG
                 NSLog(@"got error %@", error);
+#endif
                 [self.errors addObject:error];
             } else{
+#ifdef DEBUG
                 NSLog(@"no error found %@ is valid.", propertyName);
+#endif
             }
         } else{
+#ifdef DEBUG
             NSLog(@"not validating %@ withType %@.\nImplement -(NSError *)%@(%@ *)%@ to validate a property.", propertyName, propertyType, selectorName, propertyType, propertyName);
+#endif
         }
     }
     
