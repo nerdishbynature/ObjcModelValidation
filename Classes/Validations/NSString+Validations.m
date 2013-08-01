@@ -23,7 +23,7 @@
         }
     }
     
-    // this happens if no invalid string where found
+    // this happens if no invalid string was found
     // or array is empty
     return valid;
 }
@@ -45,7 +45,7 @@
         }
     }
     
-    // this happens if no invalid string where found
+    // this happens if no invalid string was found
     // or array is empty
     return valid;
 }
