@@ -29,11 +29,12 @@
 }
 
 /**
- A simple for loop iterating through the properties fetched from the model (@see loadProperties).
- Reads the type and name and checks whether a validation method is implemented or not.
- If a validation method exists it runs it and receives an error object or nil.
- If an error object exists it stores this into the errors property.
- @see http://stackoverflow.com/questions/11895287/performselector-arc-warning
+ *	A simple for loop iterating through the properties fetched from the model (@see loadProperties).
+ *  Reads the type and name and checks whether a validation method is implemented or not. 
+ *  If a validation method exists it runs it and receives an error object or nil.
+ *  If a validation method exists it runs it and receives an error object or nil.
+ *  If an error object exists it stores this into the errors property.
+ *  @see http://stackoverflow.com/questions/11895287/performselector-arc-warning
  */
 -(void)validateProperties{
     if (!self.properties) {
