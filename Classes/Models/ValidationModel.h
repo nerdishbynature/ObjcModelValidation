@@ -58,4 +58,11 @@
  */
 -(NSError *)errorWithErrorDomain:(NSString *)errorDomain code:(NSInteger)errorCode andUserInfoDictionary:(NSDictionary *)userInfoDict;
 
+/**
+ *	Dictionary object description
+ *
+ *	@return	Returns a dictionary which contains the name and the value of each property.
+ */
+-(NSDictionary *)dictonaryDescription;
+
 @end

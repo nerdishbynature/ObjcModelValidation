@@ -157,4 +157,23 @@ static const char *getPropertyType(objc_property_t property)
     return "@";
 }
 
+#pragma mark - description
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<%@> %@", NSStringFromClass([self class]), [self dictonaryDescription]];
+}
+
+-(NSDictionary *)dictonaryDescription{
+    NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
+    
+    NSArray *properties = [self loadProperties];
+    for (NSDictionary *property in properties) {
+        NSString *propertyName = [property valueForKey:kPropertyNameKey];
+        [mutableDict setValue:[self valueForKey:propertyName] forKey:propertyName];
+    }
+    
+    return [NSDictionary dictionaryWithDictionary:mutableDict];
+}
+
 @end
