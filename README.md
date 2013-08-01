@@ -16,7 +16,7 @@ Import using cocoapods
     pod 'ObjcModelValidation', '~> 0.2'
     
 ### Create your model
-
+	
     #import "ValidationModel.h"
 
     @interface SampleModel : ValidationModel

@@ -11,16 +11,20 @@
 @interface NSNumber (Validations)
 
 /**
- Checks if the referenceNumber is greater than self
- @param referenceNumber Number used to validate self.
- @return BOOL value
+ *	Checks if the referenceNumber is greater than self
+ *
+ *	@param	referenceNumber Number used to validate self.
+ *
+ *	@return	BOOL value
  */
 -(BOOL)greaterThan:(NSNumber *)referenceNumber;
 
 /**
- Checks if the referenceNumber is smaller than self
- @param referenceNumber Number used to validate self.
- @return BOOL value
+ *	Checks if the referenceNumber is smaller than self
+ *
+ *	@param	referenceNumber	Number used to validate self.
+ *
+ *	@return	BOOL value
  */
 -(BOOL)lessThan:(NSNumber *)referenceNumber;
 

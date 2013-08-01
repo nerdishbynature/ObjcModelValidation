@@ -10,6 +10,11 @@
 
 @interface NSString (Capitalization)
 
+/**
+ *	Capitalizes the first letter
+ *
+ *	@return	Returns a string where only the first character is capitalized.
+ */
 -(NSString *)stringByCapitalizeFirstLetter;
 
 @end

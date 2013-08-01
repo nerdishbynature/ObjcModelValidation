@@ -11,10 +11,11 @@
 @interface NSObject (Validations)
 
 /**
- Checks for value to exist or not.
- This method should be overriden by other validation classes to get
- specific presence validation for a class.
- @return BOOL value
+ *	Checks for value to exist or not.
+ *  This method should be overriden by other validation classes to get
+ *  specific presence validation for a class.
+ *
+ *	@return	BOOL value
  */
 -(BOOL)presence;
 
@@ -27,9 +28,11 @@
 //-(BOOL)absence;
 
 /**
- Checks for the speicified method and executes custom validation.
- @param selector The Selector used to perform the action.
- @return BOOL value
+ *	Checks for the speicified method and executes custom validation.
+ *
+ *	@param	selector	The Selector used to perform the action.
+ *
+ *	@return	BOOL value
  */
 -(BOOL)validatesWithSelector:(SEL)selector;
 
