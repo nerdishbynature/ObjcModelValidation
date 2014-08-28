@@ -2,5 +2,5 @@ language: objective-c
 before:
   - bundle
   - bundle exec pod install
-script: ./script/test.sh
-after_success: slather
+script: ./scripts/test.sh
+after_success: bundle exec slather
