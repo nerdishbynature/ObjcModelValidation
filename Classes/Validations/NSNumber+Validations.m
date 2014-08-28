@@ -11,11 +11,11 @@
 @implementation NSNumber (Validations)
 
 -(BOOL)greaterThan:(NSNumber *)referenceNumber{
-    return ([self floatValue] > [referenceNumber floatValue]) ? YES : NO;
+    return self.floatValue > referenceNumber.floatValue;
 }
 
 -(BOOL)lessThan:(NSNumber *)referenceNumber{
-    return ([self floatValue] < [referenceNumber floatValue]) ? YES : NO;
+    return self.floatValue < referenceNumber.floatValue;
 }
 
 @end
