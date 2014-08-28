@@ -1,6 +1,12 @@
 Objective-C Model Validator
 =====
 
+[![Build Status](http://img.shields.io/travis/nerdishbynature/ObjcModelValidation/master.svg?style=flat)](https://travis-ci.org/nerdishbynature/ObjcModelValidation)
+[![Coverage Status](http://img.shields.io/coveralls/nerdishbynature/ObjcModelValidation/master.svg?style=flat)](https://coveralls.io/r/nerdishbynature/ObjcModelValidation)
+[![Cocoapods Version](http://img.shields.io/cocoapods/v/ObjcModelValidation.svg?style=flat)](https://github.com/nerdishbynature/ObjcModelValidation/blob/master/ObjcModelValidation.podspec)
+[![](http://img.shields.io/cocoapods/l/ObjcModelValidation.svg?style=flat)](https://github.com/nerdishbynature/ObjcModelValidation/blob/master/LICENSE)
+[![CocoaPods Platform](http://img.shields.io/cocoapods/p/ObjcModelValidation.svg?style=flat)]()
+
 Objective-C Model Validator is a collection of classes and categories to add easy model validation to your application.
 
 ## Idea
