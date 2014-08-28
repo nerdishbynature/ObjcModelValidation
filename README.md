@@ -16,41 +16,45 @@ Import using cocoapods
     pod 'ObjcModelValidation', '~> 0.2'
     
 ### Create your model
-	
-    #import "ValidationModel.h"
 
-    @interface SampleModel : ValidationModel
+```objc
+#import "ValidationModel.h"
 
-    @property (nonatomic, strong) NSString *nameString;
-    @property (nonatomic, strong) NSNumber *ageNumber;
+@interface SampleModel : ValidationModel
 
-    @end
+@property (nonatomic, strong) NSString *nameString;
+@property (nonatomic, strong) NSNumber *ageNumber;
+
+@end
+```
     
 Note that it inherits from ValidationModel.
 
 All properties used in this model are used to validate depending on their class.
 
-    #import "SampleModel.h"
+```objc
+#import "SampleModel.h"
 
-    @implementation SampleModel
+@implementation SampleModel
 
-    -(NSError *)validateAgeNumber:(NSNumber *)ageNumber{
-        if ([ageNumber greaterThan:@18] && [ageNumber presence]) {
-            return nil;
-        }
-    
-        return [self errorWithLocalizedMessage:NSLocalizedString(@"You should be older than 18.", @"")];
+-(NSError *)validateAgeNumber:(NSNumber *)ageNumber{
+    if ([ageNumber greaterThan:@18] && [ageNumber presence]) {
+        return nil;
     }
     
-    -(NSError *)validateNameString:(NSString *)nameString{
-        if ([nameString lengthMin:4]) {
-            return nil;
-        }
+    return [self errorWithLocalizedMessage:NSLocalizedString(@"You should be older than 18.", @"")];
+}
     
-        return [self errorWithLocalizedMessage:NSLocalizedString(@"Your name should be at least 4 characters long", @"")];
+-(NSError *)validateNameString:(NSString *)nameString{
+    if ([nameString lengthMin:4]) {
+        return nil;
     }
 
-    @end
+    return [self errorWithLocalizedMessage:NSLocalizedString(@"Your name should be at least 4 characters long", @"")];
+}
+
+@end
+```
     
     
 Note how the syntax of each validation method is: `-(NSError *)validate<CapitalizedVariableName>:(<VariableClass> *)<variableName>;`
@@ -62,22 +66,24 @@ To start validating your models create them and save. Each model has its own sav
 
 Example: 
 
-    SampleModel *sample = [[SampleModel alloc] init];
-    sample.nameString = @"Piet";
-    sample.ageNumber = @22;
+```objc
+SampleModel *sample = [[SampleModel alloc] init];
+sample.nameString = @"Piet";
+sample.ageNumber = @22;
     
-    NSArray *errors = [sample save];
-    if (errors.count != 0) {
+NSArray *errors = [sample save];
+if (errors.count != 0) {
         
-        PBLog(@"I got some errors here.");
+    PBLog(@"I got some errors here.");
         
-        for (NSError *error in errors) {
+    for (NSError *error in errors) {
             
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:error.localizedDescription delegate:nil cancelButtonTitle:@"Hide" otherButtonTitles:nil];
-            [alertView show];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:error.localizedDescription delegate:nil cancelButtonTitle:@"Hide" otherButtonTitles:nil];
+        [alertView show];
             
-        }
     }
+}
+```
 
 Note when overriding `save` you have to call `[super save];`. Otherwise validations are not called.
 
@@ -92,22 +98,30 @@ Checks for value to exist or not.
 This method should be overriden by other validation classes to get
 specific presence validation for a class.
  
-    -(BOOL)presence;
+```objc
+-(BOOL)presence;
+```
 
 
 Checks for the speicified method and executes custom validation.
 
-    -(BOOL)validatesWithSelector:(SEL)selector;
+```objc
+-(BOOL)validatesWithSelector:(SEL)selector;
+```
     
 #### NSNumber validators
 
 Checks if the referenceNumber is greater than self
 
-    -(BOOL)greaterThan:(NSNumber *)referenceNumber;
+```objc
+-(BOOL)greaterThan:(NSNumber *)referenceNumber;
+```
     
 Checks if the referenceNumber is smaller than self
 
-    -(BOOL)lessThan:(NSNumber *)referenceNumber;
+```objc
+-(BOOL)lessThan:(NSNumber *)referenceNumber;
+```
 
 #### NSString validators
 
@@ -115,44 +129,60 @@ Takes an array of strings and searches for it in self.
 
 Returns YES if strings where not found in string.
 
-    -(BOOL)exclusion:(NSArray *)exclusionArray;
+```objc
+-(BOOL)exclusion:(NSArray *)exclusionArray;
+```
 
 
 Takes an regex string and validates it.
 
-    -(BOOL)format:(NSString *)regexExpression;
+```objc
+-(BOOL)format:(NSString *)regexExpression;
+```
 
 
 Takes an array of strings and searches for it in self.
 
 Returns YES if strings was found in string.
 
-    -(BOOL)inclusion:(NSArray *)inclusionArray;
+```objc
+-(BOOL)inclusion:(NSArray *)inclusionArray;
+```
 
 
 Validates with minimum length
 
-    -(BOOL)lengthMin:(NSInteger)length;
+```objc
+-(BOOL)lengthMin:(NSInteger)length;
+```
 
 
 Validates with maximum length
 
-    -(BOOL)lengthMax:(NSInteger)length;
+```objc
+-(BOOL)lengthMax:(NSInteger)length;
+```
 
 
 Validates with range
  
-    -(BOOL)lengthIn:(NSInteger)lengthMin and:(NSInteger)lengthMax;
+```objc
+-(BOOL)lengthIn:(NSInteger)lengthMin and:(NSInteger)lengthMax;
+```
 
 
 Validates with exact range
 
-    -(BOOL)lengthIs:(NSInteger)length;
+```objc
+-(BOOL)lengthIs:(NSInteger)length;
+```
 
 
 Validates with if the string consists only of numbers
 
-    -(BOOL)numericality;
+```objc
+-(BOOL)numericality;
+```
     
     
 ### Contributers highly welcome
