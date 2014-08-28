@@ -6,190 +6,130 @@
 //  Copyright (c) 2013 Piet Brauer. All rights reserved.
 //
 
+#import <XCTest/XCTest.h>
+#define EXP_SHORTHAND
+#import <Expecta/Expecta.h>
 #import "NSString+Validations.h"
 #import "NSObject+Validations.h"
-#import "Kiwi.h"
 
-SPEC_BEGIN(NSStringValidation)
+@interface NSStringValidationTests : XCTestCase
 
-describe(@"String exclusion", ^{
-    __block NSString *string;
-    
-    beforeEach(^{
-        string = @"Hello Darling!";
-    });
-    
-   it(@"validates with included String", ^{
-       [[theValue([string exclusion:@[@"Darling"]]) should] beFalse];
-   });
-    
-    it(@"validates with not included String", ^{
-        [[theValue([string exclusion:@[@"Piet"]]) should] beTrue];
-    });
-    
-    it(@"validates with NSNumber", ^{
-        [[theValue([string exclusion:@[@4]]) should] beTrue];
-    });
-});
+@property (nonatomic) NSString *subjectUnderTest;
 
-describe(@"String regex", ^{
+@end
 
-    __block NSString *regex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-    
-    it(@"validates email", ^{
-        NSString *string = @"info@nerdishbynature.com";
-        [[theValue([string format:regex]) should] beTrue];
-    });
-    
-    it(@"validates nonsense", ^{
-        NSString *string = @"info%nerdishbynaturecom,";
-        [[theValue([string format:regex]) should] beFalse];
-    });
-});
+@implementation NSStringValidationTests
 
-describe(@"String inclusion", ^{
-    
-    __block NSString *string;
-    
-    beforeAll(^{
-        string = @"Hello Darling!";
-    });
-    
-    it(@"validates with included String", ^{
-        [[theValue([string inclusion:@[@"Darling"]]) should] beTrue];
-    });
-    
-    it(@"validates with not included String", ^{
-        [[theValue([string inclusion:@[@"Piet"]]) should] beFalse];
-    });
-    
-    it(@"validates with NSNumber", ^{
-        [[theValue([string inclusion:@[@4]]) should] beFalse];
-    });
+- (void)setUp {
+    [super setUp];
+    self.subjectUnderTest = @"Hello Darling!";
+}
 
-});
+- (void)testThatItValidatesExclusionWithIncludedString {
+    expect([self.subjectUnderTest exclusion:@[@"Darling"]]).to.beFalsy();
+}
 
-describe(@"String length min", ^{
-    __block NSString *string;
-    
-    beforeEach(^{
-        string = @"Hello";
-    });
-    
-    it(@"validates correct", ^{
-        [[theValue([string lengthMin:1]) should] beTrue];
-    });
+- (void)testThatItValidatesExclusionWithNotIncludedString {
+    expect([self.subjectUnderTest exclusion:@[@"Piet"]]).to.beTruthy();
+}
 
-    it(@"validates too short string", ^{
-        [[theValue([string lengthMin:10]) should] beFalse];
-    });
-});
+- (void)testThatItValidatesExclusionWithNSNumber {
+    expect([self.subjectUnderTest exclusion:@[@4]]).to.beTruthy();
+}
 
-describe(@"String length max", ^{
-    __block NSString *string;
-    
-    beforeEach(^{
-        string = @"Hello";
-    });
-    
-    it(@"validates correct", ^{
-        [[theValue([string lengthMax:10]) should] beTrue];
-    });
-    
-    it(@"string to long for validation", ^{
-        [[theValue([string lengthMax:1]) should] beFalse];
-    });
-});
+- (void)testThatItValidatesInclusionWithIncludedString {
+    expect([self.subjectUnderTest inclusion:@[@"Darling"]]).to.beTruthy();
+}
 
-describe(@"String length min and max", ^{
-    __block NSString *string;
-    
-    beforeEach(^{
-        string = @"Hello";
-    });
-    
-    it(@"validates correct", ^{
-        [[theValue([string lengthIn:1 and:10]) should] beTrue];
-    });
-    
-    it(@"string to short for validation", ^{
-        [[theValue([string lengthIn:10 and:15]) should] beFalse];
-    });
-});
+- (void)testThatItValidatesInclusionWithNotIncludedString {
+    expect([self.subjectUnderTest inclusion:@[@"Piet"]]).to.beFalsy();
+}
 
+- (void)testThatItValidatesInclusionWithNSNumber {
+    expect([self.subjectUnderTest inclusion:@[@"Piet"]]).to.beFalsy();
+}
 
-describe(@"String length is", ^{
-    __block NSString *string;
-    
-    beforeEach(^{
-        string = @"Hello";
-    });
-    
-    it(@"validates correct", ^{
-        [[theValue([string lengthIs:5]) should] beTrue];
-    });
-    
-    it(@"not equal to validation", ^{
-        [[theValue([string lengthIs:10]) should] beFalse];
-    });
-});
+- (void)testThatItValidatesEmailRegex {
+    NSString *regex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSString *subjectUnderTest = @"info@nerdishbynature.com";
+    expect([subjectUnderTest format:regex]).to.beTruthy();
+}
 
-describe(@"Object presence", ^{
-    __block NSString *string;
-    
-    it(@"validates with nil", ^{
-        string = nil;
-        [[theValue([string presence]) should] beFalse];
-    });
-    
-    it(@"validates with initialization", ^{
-        string = @"Hello";
-        [[theValue([string presence]) should] beTrue];
-    });
-    
-    it(@"validates with empty string", ^{
-        string = @"";
-        [[theValue([string presence]) should] beFalse];
-    });
-});
+- (void)testThatItValidatesWithNonsenseEmail {
+    NSString *regex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSString *subjectUnderTest = @"info%nerdishbynaturecom,";
+    expect([subjectUnderTest format:regex]).to.beFalsy;
+}
 
-//describe(@"Object absence", ^{    
-//    it(@"validates with nil", ^{
-//        NSString *nilString = nil;
-//        NSLog(@"%@", [nilString class]);
-//        [[theValue([nilString absence]) should] beTrue];
-//    });
-//    
-//    it(@"validates with initialization", ^{
-//        NSString *helloString = @"Hello";
-//        [[theValue([helloString absence]) should] beFalse];
-//    });
-//    
-//    it(@"validates with empty string", ^{
-//        NSString *emptyString = @"";
-//        [[theValue([emptyString absence]) should] beTrue];
-//    });
-//});
+- (void)testThatItValidatesMinimumLengthWithCorrectLength {
+    NSString *subjectUnderTest = @"Hello";
+    expect([subjectUnderTest lengthMin:1]).to.beTruthy();
+}
 
-describe(@"Object numericality", ^{
-    
-    it(@"validates with integer", ^{
-        [[theValue([@"5" numericality])should] beTrue];
-    });
-    
-    it(@"validates with en number", ^{
-        [[theValue([@"4.5" numericality])should] beTrue];
-    });
-    
-    it(@"validates with de number", ^{
-        [[theValue([@"4,5" numericality])should] beTrue];
-    });
-    
-    it(@"validates not with containing strings", ^{
-        [[theValue([@"4,5de" numericality])should] beFalse];
-    });
-});
+- (void)testThatItValidatesMinimumLengthWithWrongLength {
+    NSString *subjectUnderTest = @"Hello";
+    expect([subjectUnderTest lengthMin:10]).to.beFalsy();
+}
 
+- (void)testThatItValidatesMaximumLengthWithCorrectLength {
+    NSString *subjectUnderTest = @"Hello";
+    expect([subjectUnderTest lengthMax:10]).to.beTruthy();
+}
 
+- (void)testThatItValidatesMaximumLengthWithWrongLength {
+    NSString *subjectUnderTest = @"Hello";
+    expect([subjectUnderTest lengthMax:1]).to.beFalsy();
+}
 
-SPEC_END
+- (void)testThatItValidatesMinAndMaxLengthWithCorrectRange {
+    NSString *subjectUnderTest = @"Hello";
+    expect([subjectUnderTest lengthIn:1 and:10]).to.beTruthy();
+}
+
+- (void)testThatItValidatesMinAndMaxLengthWithWrongRange {
+    NSString *subjectUnderTest = @"Hello";
+    expect([subjectUnderTest lengthIn:10 and:15]).to.beFalsy();
+}
+
+- (void)testThatItValidatesLengthWithCorrectLength {
+    NSString *subjectUnderTest = @"Hello";
+    expect([subjectUnderTest lengthIs:5]).to.beTruthy();
+}
+
+- (void)testThatItValidatesLengthWithWrongLength {
+    NSString *subjectUnderTest = @"Hello";
+    expect([subjectUnderTest lengthIs:10]).to.beFalsy();
+}
+
+- (void)testThatItValidatesPresenceWithNilString {
+    NSString *string;
+    expect([string presence]).to.beFalsy();
+}
+
+- (void)testThatItValidatesPresenceWithString {
+    NSString *string = @"Hello";
+    expect([string presence]).to.beTruthy();
+}
+
+- (void)testThatItValidatesPresenceWithEmptyString {
+    NSString *string = @"";
+    expect([string presence]).to.beFalsy();
+}
+
+- (void)testThatItValidatesNumericalityWithIntegerString {
+    expect([@"5" numericality]).to.beTruthy();
+}
+
+- (void)testThatItValidatesNumericalityWithFloatString {
+    expect([@"4.5" numericality]).to.beTruthy();
+}
+
+- (void)testThatItValidatesNumericalityWithGermanFormattedFloatString {
+    expect([@"4,5" numericality]).to.beTruthy();
+}
+
+- (void)testThatItValidatesNumericalityWithMalformattedFloatString {
+    expect([@"4,5de" numericality]).to.beFalsy();
+}
+
+@end
