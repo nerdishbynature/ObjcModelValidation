@@ -1,0 +1,6 @@
+coverage_service: coveralls
+build_directory: Build
+xcodeproj: ObjcModelValidation.xcodeproj
+source_directory: Classes
+ignore:
+  - ObjcModelValidation/*
