@@ -10,19 +10,12 @@
 		2393AD801768BFD00064ADE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD7F1768BFD00064ADE4 /* UIKit.framework */; };
 		2393AD821768BFD00064ADE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD811768BFD00064ADE4 /* Foundation.framework */; };
 		2393AD841768BFD00064ADE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD831768BFD00064ADE4 /* CoreGraphics.framework */; };
-		2393ADA41768BFD00064ADE4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393ADA31768BFD00064ADE4 /* SenTestingKit.framework */; };
-		2393ADA51768BFD00064ADE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD7F1768BFD00064ADE4 /* UIKit.framework */; };
-		2393ADA61768BFD00064ADE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD811768BFD00064ADE4 /* Foundation.framework */; };
-		2393ADAE1768BFD10064ADE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2393ADAC1768BFD10064ADE4 /* InfoPlist.strings */; };
-		2393ADB11768BFD10064ADE4 /* ObjcModelValidationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393ADB01768BFD10064ADE4 /* ObjcModelValidationTests.m */; };
 		2393ADBD1768C1970064ADE4 /* SampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393ADBC1768C1970064ADE4 /* SampleModel.m */; };
 		2393ADC01768C1BD0064ADE4 /* ValidationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393ADBF1768C1BD0064ADE4 /* ValidationModel.m */; };
 		23D173F21768F0BB0041D286 /* NSString+Capitalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F11768F0BB0041D286 /* NSString+Capitalization.m */; };
 		23D173F517691B150041D286 /* NSNumber+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F417691B150041D286 /* NSNumber+Validations.m */; };
 		23D173F817691C9F0041D286 /* NSObject+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173F717691C9F0041D286 /* NSObject+Validations.m */; };
 		23D173FB17691CB10041D286 /* NSString+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D173FA17691CB10041D286 /* NSString+Validations.m */; };
-		23D174051769213E0041D286 /* NSStringValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D174041769213E0041D286 /* NSStringValidations.m */; };
-		23D174091769365A0041D286 /* NSObjectValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D17408176936590041D286 /* NSObjectValidations.m */; };
 		23EA9257177A171C00504DF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA924E177A171C00504DF1 /* AppDelegate.m */; };
 		23EA9258177A171C00504DF1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EA924F177A171C00504DF1 /* Default-568h@2x.png */; };
 		23EA9259177A171C00504DF1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 23EA9250177A171C00504DF1 /* Default.png */; };
@@ -30,12 +23,18 @@
 		23EA925B177A171C00504DF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA9252177A171C00504DF1 /* main.m */; };
 		23EA925C177A171C00504DF1 /* ObjcModelValidation-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23EA9253177A171C00504DF1 /* ObjcModelValidation-Info.plist */; };
 		23EA925D177A171C00504DF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA9256177A171C00504DF1 /* ViewController.m */; };
+		4E477AA2BBAA453EA3246509 /* libPods-ObjcModelValidationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */; };
 		A0F4DF2DD08B45CDB2012491 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB208A5F609B4EAF9966FAED /* libPods.a */; };
-		FD6267150FB846558A41D48F /* libPods-ObjcModelValidationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */; };
+		F08F454B19AF7060009ADDBA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08F454A19AF7060009ADDBA /* XCTest.framework */; };
+		F08F454C19AF7060009ADDBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD811768BFD00064ADE4 /* Foundation.framework */; };
+		F08F454D19AF7060009ADDBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393AD7F1768BFD00064ADE4 /* UIKit.framework */; };
+		F08F455319AF7060009ADDBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F08F455119AF7060009ADDBA /* InfoPlist.strings */; };
+		F08F455C19AF7083009ADDBA /* NSStringValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D174041769213E0041D286 /* NSStringValidations.m */; };
+		F08F455D19AF7086009ADDBA /* NSObjectValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D17408176936590041D286 /* NSObjectValidations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2393ADA71768BFD00064ADE4 /* PBXContainerItemProxy */ = {
+		F08F455719AF7060009ADDBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2393AD741768BFD00064ADE4 /* Project object */;
 			proxyType = 1;
@@ -49,11 +48,7 @@
 		2393AD7F1768BFD00064ADE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2393AD811768BFD00064ADE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2393AD831768BFD00064ADE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2393ADA21768BFD00064ADE4 /* ObjcModelValidationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcModelValidationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2393ADA31768BFD00064ADE4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		2393ADAB1768BFD10064ADE4 /* ObjcModelValidationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjcModelValidationTests-Info.plist"; sourceTree = "<group>"; };
-		2393ADAD1768BFD10064ADE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2393ADB01768BFD10064ADE4 /* ObjcModelValidationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcModelValidationTests.m; sourceTree = "<group>"; };
 		2393ADBB1768C1970064ADE4 /* SampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleModel.h; path = ../ObjcModelValidation/SampleModel.h; sourceTree = "<group>"; };
 		2393ADBC1768C1970064ADE4 /* SampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleModel.m; path = ../ObjcModelValidation/SampleModel.m; sourceTree = "<group>"; };
 		2393ADBE1768C1BD0064ADE4 /* ValidationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValidationModel.h; path = Models/ValidationModel.h; sourceTree = "<group>"; };
@@ -82,6 +77,11 @@
 		2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcModelValidationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F60A1B379A249AF87BA6B16 /* Pods-ObjcModelValidationTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcModelValidationTests.xcconfig"; path = "Pods/Pods-ObjcModelValidationTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		EB208A5F609B4EAF9966FAED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08F454919AF7060009ADDBA /* ObjcModelValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcModelValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08F454A19AF7060009ADDBA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F08F455019AF7060009ADDBA /* ObjcModelValidationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjcModelValidationTests-Info.plist"; sourceTree = "<group>"; };
+		F08F455219AF7060009ADDBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F08F455619AF7060009ADDBA /* ObjcModelValidationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcModelValidationTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,14 +96,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2393AD9E1768BFD00064ADE4 /* Frameworks */ = {
+		F08F454619AF7060009ADDBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2393ADA41768BFD00064ADE4 /* SenTestingKit.framework in Frameworks */,
-				2393ADA51768BFD00064ADE4 /* UIKit.framework in Frameworks */,
-				2393ADA61768BFD00064ADE4 /* Foundation.framework in Frameworks */,
-				FD6267150FB846558A41D48F /* libPods-ObjcModelValidationTests.a in Frameworks */,
+				F08F454B19AF7060009ADDBA /* XCTest.framework in Frameworks */,
+				F08F454D19AF7060009ADDBA /* UIKit.framework in Frameworks */,
+				F08F454C19AF7060009ADDBA /* Foundation.framework in Frameworks */,
+				4E477AA2BBAA453EA3246509 /* libPods-ObjcModelValidationTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +115,7 @@
 			children = (
 				2393AD851768BFD00064ADE4 /* ObjcModelValidation */,
 				2393ADA91768BFD00064ADE4 /* ObjcModelValidationTests */,
+				F08F454E19AF7060009ADDBA /* ObjcModelValidationTests */,
 				2393AD7E1768BFD00064ADE4 /* Frameworks */,
 				2393AD7D1768BFD00064ADE4 /* Products */,
 				26DA17AC31C04A9AA08D8A66 /* Pods.xcconfig */,
@@ -126,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				2393AD7C1768BFD00064ADE4 /* ObjcModelValidation.app */,
-				2393ADA21768BFD00064ADE4 /* ObjcModelValidationTests.octest */,
+				F08F454919AF7060009ADDBA /* ObjcModelValidationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +141,7 @@
 				2393ADA31768BFD00064ADE4 /* SenTestingKit.framework */,
 				EB208A5F609B4EAF9966FAED /* libPods.a */,
 				2A2E2FF41C604E0DAD5C8DCE /* libPods-ObjcModelValidationTests.a */,
+				F08F454A19AF7060009ADDBA /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,20 +178,8 @@
 		2393ADA91768BFD00064ADE4 /* ObjcModelValidationTests */ = {
 			isa = PBXGroup;
 			children = (
-				23D17406176921440041D286 /* Validations */,
-				2393ADB01768BFD10064ADE4 /* ObjcModelValidationTests.m */,
-				2393ADAA1768BFD10064ADE4 /* Supporting Files */,
 			);
 			path = ObjcModelValidationTests;
-			sourceTree = "<group>";
-		};
-		2393ADAA1768BFD10064ADE4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2393ADAB1768BFD10064ADE4 /* ObjcModelValidationTests-Info.plist */,
-				2393ADAC1768BFD10064ADE4 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2393ADBA1768C1700064ADE4 /* Model */ = {
@@ -234,6 +224,25 @@
 			name = Validations;
 			sourceTree = "<group>";
 		};
+		F08F454E19AF7060009ADDBA /* ObjcModelValidationTests */ = {
+			isa = PBXGroup;
+			children = (
+				23D17406176921440041D286 /* Validations */,
+				F08F454F19AF7060009ADDBA /* Supporting Files */,
+			);
+			path = ObjcModelValidationTests;
+			sourceTree = "<group>";
+		};
+		F08F454F19AF7060009ADDBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F08F455019AF7060009ADDBA /* ObjcModelValidationTests-Info.plist */,
+				F08F455119AF7060009ADDBA /* InfoPlist.strings */,
+				F08F455619AF7060009ADDBA /* ObjcModelValidationTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,26 +265,25 @@
 			productReference = 2393AD7C1768BFD00064ADE4 /* ObjcModelValidation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2393ADA11768BFD00064ADE4 /* ObjcModelValidationTests */ = {
+		F08F454819AF7060009ADDBA /* ObjcModelValidationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2393ADB71768BFD10064ADE4 /* Build configuration list for PBXNativeTarget "ObjcModelValidationTests" */;
+			buildConfigurationList = F08F455919AF7060009ADDBA /* Build configuration list for PBXNativeTarget "ObjcModelValidationTests" */;
 			buildPhases = (
-				19958E6384C34FC39E998BAE /* Check Pods Manifest.lock */,
-				2393AD9D1768BFD00064ADE4 /* Sources */,
-				2393AD9E1768BFD00064ADE4 /* Frameworks */,
-				2393AD9F1768BFD00064ADE4 /* Resources */,
-				2393ADA01768BFD00064ADE4 /* ShellScript */,
-				B12B96E058634375B485186C /* Copy Pods Resources */,
+				79A6F45AA1CC41D0BCBFC98C /* Check Pods Manifest.lock */,
+				F08F454519AF7060009ADDBA /* Sources */,
+				F08F454619AF7060009ADDBA /* Frameworks */,
+				F08F454719AF7060009ADDBA /* Resources */,
+				948191A586B941BDBC559D68 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2393ADA81768BFD00064ADE4 /* PBXTargetDependency */,
+				F08F455819AF7060009ADDBA /* PBXTargetDependency */,
 			);
 			name = ObjcModelValidationTests;
 			productName = ObjcModelValidationTests;
-			productReference = 2393ADA21768BFD00064ADE4 /* ObjcModelValidationTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = F08F454919AF7060009ADDBA /* ObjcModelValidationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -285,6 +293,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Piet Brauer";
+				TargetAttributes = {
+					F08F454819AF7060009ADDBA = {
+						TestTargetID = 2393AD7B1768BFD00064ADE4;
+					};
+				};
 			};
 			buildConfigurationList = 2393AD771768BFD00064ADE4 /* Build configuration list for PBXProject "ObjcModelValidation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -299,7 +312,7 @@
 			projectRoot = "";
 			targets = (
 				2393AD7B1768BFD00064ADE4 /* ObjcModelValidation */,
-				2393ADA11768BFD00064ADE4 /* ObjcModelValidationTests */,
+				F08F454819AF7060009ADDBA /* ObjcModelValidationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -316,18 +329,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2393AD9F1768BFD00064ADE4 /* Resources */ = {
+		F08F454719AF7060009ADDBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2393ADAE1768BFD10064ADE4 /* InfoPlist.strings in Resources */,
+				F08F455319AF7060009ADDBA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19958E6384C34FC39E998BAE /* Check Pods Manifest.lock */ = {
+		79A6F45AA1CC41D0BCBFC98C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,21 +353,9 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-		2393ADA01768BFD00064ADE4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		B12B96E058634375B485186C /* Copy Pods Resources */ = {
+		948191A586B941BDBC559D68 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,6 +368,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-ObjcModelValidationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		CE6AD5547ECD4B41810ED259 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -415,31 +417,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2393AD9D1768BFD00064ADE4 /* Sources */ = {
+		F08F454519AF7060009ADDBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2393ADB11768BFD10064ADE4 /* ObjcModelValidationTests.m in Sources */,
-				23D174051769213E0041D286 /* NSStringValidations.m in Sources */,
-				23D174091769365A0041D286 /* NSObjectValidations.m in Sources */,
+				F08F455D19AF7086009ADDBA /* NSObjectValidations.m in Sources */,
+				F08F455C19AF7083009ADDBA /* NSStringValidations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2393ADA81768BFD00064ADE4 /* PBXTargetDependency */ = {
+		F08F455819AF7060009ADDBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2393AD7B1768BFD00064ADE4 /* ObjcModelValidation */;
-			targetProxy = 2393ADA71768BFD00064ADE4 /* PBXContainerItemProxy */;
+			targetProxy = F08F455719AF7060009ADDBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2393ADAC1768BFD10064ADE4 /* InfoPlist.strings */ = {
+		F08F455119AF7060009ADDBA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2393ADAD1768BFD10064ADE4 /* en */,
+				F08F455219AF7060009ADDBA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -531,39 +532,66 @@
 			};
 			name = Release;
 		};
-		2393ADB81768BFD10064ADE4 /* Debug */ = {
+		F08F455A19AF7060009ADDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F60A1B379A249AF87BA6B16 /* Pods-ObjcModelValidationTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ObjcModelValidation.app/ObjcModelValidation";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjcModelValidation/ObjcModelValidation-Prefix.pch";
+				GCC_PREFIX_HEADER = "ObjcModelValidationTests/ObjcModelValidationTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ObjcModelValidationTests/ObjcModelValidationTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		2393ADB91768BFD10064ADE4 /* Release */ = {
+		F08F455B19AF7060009ADDBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F60A1B379A249AF87BA6B16 /* Pods-ObjcModelValidationTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ObjcModelValidation.app/ObjcModelValidation";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjcModelValidation/ObjcModelValidation-Prefix.pch";
+				GCC_PREFIX_HEADER = "ObjcModelValidationTests/ObjcModelValidationTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ObjcModelValidationTests/ObjcModelValidationTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -588,11 +616,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2393ADB71768BFD10064ADE4 /* Build configuration list for PBXNativeTarget "ObjcModelValidationTests" */ = {
+		F08F455919AF7060009ADDBA /* Build configuration list for PBXNativeTarget "ObjcModelValidationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2393ADB81768BFD10064ADE4 /* Debug */,
-				2393ADB91768BFD10064ADE4 /* Release */,
+				F08F455A19AF7060009ADDBA /* Debug */,
+				F08F455B19AF7060009ADDBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

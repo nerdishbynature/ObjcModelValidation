@@ -32,8 +32,8 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2393ADA11768BFD00064ADE4"
-               BuildableName = "ObjcModelValidationTests.octest"
+               BlueprintIdentifier = "F08F454819AF7060009ADDBA"
+               BuildableName = "ObjcModelValidationTests.xctest"
                BlueprintName = "ObjcModelValidationTests"
                ReferencedContainer = "container:ObjcModelValidation.xcodeproj">
             </BuildableReference>
